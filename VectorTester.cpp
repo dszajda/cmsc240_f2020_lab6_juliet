@@ -17,7 +17,13 @@ int main()
    std::cout << "----------------" << std::endl;
    std::cout << "CharacterVector:" << std::endl;
    std::cout << "----------------" << std::endl;
+   
+   CharacterVector<char> test1[5];
+   test1.put('c');
+   std::cout << test1.size() << std::endl;
+   
 
+   
    //-------------------------------------------------------------------------
 
    // test DoubleVector: put, get, size, out_of_range
