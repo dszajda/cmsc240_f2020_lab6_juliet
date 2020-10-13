@@ -18,9 +18,12 @@ int main()
    std::cout << "CharacterVector:" << std::endl;
    std::cout << "----------------" << std::endl;
    
-   CharacterVector<char> test1[5];
-   test1.put('c');
-   std::cout << test1.size() << std::endl;
+   cv.put(33);
+   std::cout << std::endl;
+   std::cout << dv.get(0) << std::endl;
+   cv.put(1);
+   std::cout << dv.size() << std::endl;
+   std::cout << dv.get(1) << std::endl;
    
 
    

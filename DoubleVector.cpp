@@ -43,4 +43,4 @@ void DoubleVector::appendIntegerVector(IntegerVector& integerVector)
 {
 }
 
-#:endif
+#endif

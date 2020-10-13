@@ -21,7 +21,7 @@ char CharacterVector::get(int index){
 // if index is size-legitimate, put the value at that index;
 // otherwise, use push_back to append to the end of the vector
 void CharacterVector::put(char value, int index){
-    if(index >= 0 && index <= characterVector.size(){
+    if(index >= 0 && (unsigned)index <= characterVector.size()){
 	characterVector[index] = value;
     }
     else{
@@ -38,15 +38,15 @@ void CharacterVector::put(char value){
 // character to characterVector
 void CharacterVector::appendDoubleVector(DoubleVector& doubleVector){
     for(int i{0}; i < doubleVector.size(); i++){
-	static_cast<double>characterVector.push_back(doubleVector[i]);
+	characterVector.push_back(static_cast<char>(doubleVector.get(i)));
     }
 }
 
 // for each integer in integerVector, use static_cast<char> to append as a
 // character to characterVector
 void CharacterVector::appendIntegerVector(IntegerVector& integerVector){
-    for(int i{0}; i < IntegerVector.size(); i++){
-	static_cast<int>characterVector.push_back(doubleVector[i]);
+    for(int i{0}; i < integerVector.size(); i++){
+	characterVector.push_back(static_cast<char>(integerVector.get(i)));
     }
 }
 
