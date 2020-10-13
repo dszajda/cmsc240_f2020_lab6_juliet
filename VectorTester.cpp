@@ -25,7 +25,7 @@ int main()
    std::cout << std::endl;
    std::cout << dv.get(0)  << std::endl;
    std::cout << dv.size() << std::endl;
-   std::cout <<  << std::endl;
+   std::cout << dv.get(1) << std::endl;
 
    //-------------------------------------------------------------------------
 
