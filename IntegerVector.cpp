@@ -11,6 +11,7 @@ IntegerVector::~IntegerVector() {}
 int IntegerVector::size() 
 {
    return integerVector.size();
+
 }
 
 // just return the integer at the specified index; use the at() method rather
