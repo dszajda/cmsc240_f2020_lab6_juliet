@@ -53,9 +53,9 @@ int main()
    DoubleVector dv2;
 
    std::cout << std::endl;
-   std::cout << "-------------------------" << std::endl;
+   std::cout << dv2.append(lv) << std::endl;
    std::cout << "appended-to DoubleVector:" << std::endl;
-   std::cout << "-------------------------" << std::endl;
+   std::cout << dv2.append(cv) << std::endl;
 
    //-------------------------------------------------------------------------
 
