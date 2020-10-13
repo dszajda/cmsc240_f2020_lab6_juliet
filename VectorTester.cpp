@@ -21,11 +21,11 @@ int main()
    //-------------------------------------------------------------------------
 
    // test DoubleVector: put, get, size, out_of_range
-
+   dv.put(2.2);
    std::cout << std::endl;
-   std::cout << "-------------" << std::endl;
-   std::cout << "DoubleVector:" << std::endl;
-   std::cout << "-------------" << std::endl;
+   std::cout << dv.get(0)  << std::endl;
+   std::cout << dv.size() << std::endl;
+   std::cout <<  << std::endl;
 
    //-------------------------------------------------------------------------
 
