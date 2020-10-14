@@ -24,8 +24,8 @@ int main()
    cv.put(1);
    std::cout << dv.size() << std::endl;
    std::cout << dv.get(1) << std::endl;
-   
-   
+   std::cout << dv.get(3) << std::endl;
+
 
    
    //-------------------------------------------------------------------------
@@ -61,6 +61,7 @@ int main()
    cv2.appendIntegerVector(iv);
    std::cout << "Appended to Character Vector:" << cv2.get(0) << std::endl;
    std::cout << "Appended to Character Vector:" << cv2.get(1) << std::endl;
+   std::cout << "Appended to Character Vector:" << cv2.get(10) << std::endl;
    //-------------------------------------------------------------------------
 
    // using empty DoubleVector, test appending iv & cv from above
