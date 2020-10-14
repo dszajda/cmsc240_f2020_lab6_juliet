@@ -17,7 +17,16 @@ int main()
    std::cout << "----------------" << std::endl;
    std::cout << "CharacterVector:" << std::endl;
    std::cout << "----------------" << std::endl;
+   
+   cv.put(33);
+   std::cout << std::endl;
+   std::cout << dv.get(0) << std::endl;
+   cv.put(1);
+   std::cout << dv.size() << std::endl;
+   std::cout << dv.get(1) << std::endl;
+   
 
+   
    //-------------------------------------------------------------------------
 
    // test DoubleVector: put, get, size, out_of_range
@@ -53,9 +62,9 @@ int main()
    DoubleVector dv2;
 
    std::cout << std::endl;
-   std::cout << "-------------------------" << std::endl;
+   std::cout << dv2.append(lv) << std::endl;
    std::cout << "appended-to DoubleVector:" << std::endl;
-   std::cout << "-------------------------" << std::endl;
+   std::cout << dv2.append(cv) << std::endl;
 
    //-------------------------------------------------------------------------
 

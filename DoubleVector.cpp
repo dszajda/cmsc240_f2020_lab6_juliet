@@ -11,6 +11,7 @@ DoubleVector::~DoubleVector() {}
 int DoubleVector::size() 
 {
    return doubleVector.size();
+
 }
 
 // just return the double at the specified index; use the at() method rather
@@ -18,6 +19,7 @@ int DoubleVector::size()
 double DoubleVector::get(int index) 
 { 
    return doubleVector.at(index);
+
 }
 
 // if index is size-legitimate, put the value at that index;
