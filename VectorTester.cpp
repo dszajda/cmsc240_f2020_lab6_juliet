@@ -53,7 +53,11 @@ int main()
    std::cout << "----------------------------" << std::endl;
    std::cout << "appended-to CharacterVector:" << std::endl;
    std::cout << "----------------------------" << std::endl;
-
+   std::cout << std::endl;
+   cv2.appendDoubleVector(dv);   
+   cv2.appendIntegerVector(iv);
+   std::cout << "Appended to Character Vector:" << cv2.get(0) << std::endl;
+   std::cout << "Appended to Character Vector:" << cv2.get(1) << std::endl;
    //-------------------------------------------------------------------------
 
    // using empty DoubleVector, test appending iv & cv from above

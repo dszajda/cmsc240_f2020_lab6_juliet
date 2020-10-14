@@ -11,10 +11,6 @@ CharacterVector::~CharacterVector() {}
 
 int CharacterVector::size(){  
    return characterVector.size();
-
-int CharacterVector::size() 
-{  
-   return(0);
 }
 
 // just return the character at the specified index; use the at() method rather
@@ -22,10 +18,6 @@ int CharacterVector::size()
 
 char CharacterVector::get(int index){ 
     return characterVector.at(index);
-
-char CharacterVector::get(int index) 
-{ 
-   return(0);
 }
 
 // if index is size-legitimate, put the value at that index;
