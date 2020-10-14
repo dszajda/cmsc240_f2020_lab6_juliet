@@ -17,7 +17,16 @@ int main()
    std::cout << "----------------" << std::endl;
    std::cout << "CharacterVector:" << std::endl;
    std::cout << "----------------" << std::endl;
+   
+   cv.put(33);
+   std::cout << std::endl;
+   std::cout << dv.get(0) << std::endl;
+   cv.put(1);
+   std::cout << dv.size() << std::endl;
+   std::cout << dv.get(1) << std::endl;
+   
 
+   
    //-------------------------------------------------------------------------
 
    // test DoubleVector: put, get, size, out_of_range
@@ -30,10 +39,12 @@ int main()
    //-------------------------------------------------------------------------
 
    // test IntegerVector: put, get, size, out_of_range
-
-   std::cout << "--------------" << std::endl;
-   std::cout << "IntegerVector:" << std::endl;
-   std::cout << "--------------" << std::endl;
+   
+   iv.put(5);
+   std::cout << std::endl;
+   std::cout << iv.get(0) << std::endl;
+   std::cout << iv.size() << std::endl;
+   std::cout << iv.get(1) << std::endl;
 
    //-------------------------------------------------------------------------
 
@@ -60,11 +71,12 @@ int main()
 
    // using empty IntegerVector, test appending cv & dv from above 
    IntegerVector iv2;
-
+   
    std::cout << std::endl;
-   std::cout << "--------------------------" << std::endl;
-   std::cout << "appended-to IntegerVector:" << std::endl;
-   std::cout << "--------------------------" << std::endl;
+   iv2.appendCharacterVector(cv);
+   iv2.appendDoubleVector(dv);
+   std::cout << "appended-to IntegerVector:" << iv2.get(0) << std::endl;
+   std::cout << "appended-to IntegerVector:" << iv2.get(1) << std::endl;
 
    //-------------------------------------------------------------------------
 
