@@ -49,11 +49,10 @@ int main()
 
    // using empty DoubleVector, test appending iv & cv from above
    DoubleVector dv2;
-
    std::cout << std::endl;
-   std::cout << dv2.appendIntegerVector(iv) << std::endl;
+   std::cout <<  << std::endl;
    std::cout << "appended-to DoubleVector:" << std::endl;
-   std::cout << dv2.appendCharacterVector(cv) << std::endl;
+   std::cout <<  << std::endl;
 
    //-------------------------------------------------------------------------
 
